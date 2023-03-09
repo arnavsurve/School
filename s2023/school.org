@@ -12,10 +12,9 @@ SCHEDULED: <2023-03-09 Thurs 07:30-8:30 +1w>
 ** homework
 *** TODO CNIT 270 Phishing Lab
 DEADLINE: <2023-03-20 Mon 23:59>
-*** TODO CNIT 270 Math of RSA Active Learning
+*** DONE CNIT 270 Math of RSA Active Learning
 DEADLINE: <2023-03-08 Wed 23:59>
 ** notes
-*** TODO convert phishing lab links to mla citation
 
 * CNIT 15501 - Intro to Software Development Concepts
 ** properties
