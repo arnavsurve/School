@@ -1,0 +1,65 @@
+#+TODO: TODO IN-PROGRESS | DONE CANCELED
+
+* CNIT 27000 - Cybersecurity Fundamentals
+** properties
+** schedule
+*** TODO CNIT270 Lecture
+SCHEDULED: <2023-03-07 Tue 07:30-8:30 +1w>
+*** TODO CNIT270 Lab
+SCHEDULED: <2023-03-08 Wed 09:30-11:30 +1w>
+*** TODO CNIT270 Lecture
+SCHEDULED: <2023-03-09 Thurs 07:30-8:30 +1w>
+** homework
+*** TODO CNIT 270 Phishing Lab
+DEADLINE: <2023-03-20 Mon 23:59>
+*** TODO CNIT 270 Math of RSA Active Learning
+DEADLINE: <2023-03-08 Wed 23:59>
+** notes
+*** TODO convert phishing lab links to mla citation
+
+* CNIT 15501 - Intro to Software Development Concepts
+** properties
+** schedule
+*** TODO CNIT155 Lecture
+SCHEDULED: <2023-03-20 Mon 14:30-15:30 +1w>
+*** TODO CNIT155 Lab
+SCHEDULED: <2023-03-09 Thurs 09:30-11:30 +1w>
+*** TODO CNIT155 Lecture
+SCHEDULED: <2023-03-24 Fri 14:30-15:30 +1w>
+** homework
+*** TODO CNIT 155 Assignment07
+DEADLINE: <2023-03-14 Tue 23:59>
+** notes
+
+* SCLA 10100 - Critical Thinking and Communication
+** properties
+** schedule
+*** TODO SCLA101 Lecture
+SCHEDULED: <2023-03-07 Tues 13:30-14:45 +1w>
+*** TODO SCLA101 Lecture
+SCHEDULED: <2023-03-09 Thurs 13:30-14:45 +1w>
+** homework
+** notes
+
+* ECON 25100 - Microeconomics
+** properties
+** schedule
+*** TODO ECON251 Lecture
+SCHEDULED: <2023-03-07 Tues 15:00-16:15 +1w>
+*** TODO ECON251 Lecture
+SCHEDULED: <2023-03-09 Thurs 15:00-16:15 +1w>
+** homework
+** notes
+
+* TDM 10200/11200 - The Data Mine
+** schedule
+*** TODO TDM112 OOE Teams meeting
+SCHEDULED: <2023-03-13 Mon 15:30-16:30 +1w>
+*** TODO TDM112 Lab
+SCHEDULED: <2023-03-10 Fri 15:30-17:20 +1w>
+** homework
+*** DONE TDM Sprint Report 4
+DEADLINE: <2023-03-08 Wed 23:59>
+*** TODO TDM Project 8
+DEADLINE: <2023-03-10 Fri 23:59>
+** notes

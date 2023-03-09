@@ -1,0 +1,289 @@
+Delivered-To: curls1@gmail.com
+Received: by 2002:a05:7010:3e23:b0:316:90bb:d813 with SMTP id w35csp210980mdp;
+        Thu, 22 Dec 2022 03:18:06 -0800 (PST)
+X-Received: by 2002:a0c:f243:0:b0:4c6:cfb5:a881 with SMTP id z3-20020a0cf243000000b004c6cfb5a881mr28795412qvl.37.1671707886212;
+        Thu, 22 Dec 2022 03:18:06 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1671707886; cv=none;
+        d=google.com; s=arc-20160816;
+        b=AOoxmIdJyCNysrVraFrT+m3hSjI85iF6K2nkGz27Hbkp5p90DJS02N3uFQ6frLPSvu
+         0sssBQwV+yr8MYD6MIVTcqTX2QPhXWWv6acK/Ew6NrjqyPM0ammGPlmc7UhEcDZRPFmR
+         7yfX+iN9PAk6OkxjFdwY8PllaNS2Tnguyn+H6T/f/6WlS+KevGyVyt3JBKoGccHpiLHG
+         fwm6JccSd7cBwmUSYHQrSpGQqHPTWwMXa2sH79anXHJs6Y5IA3JUdI8KL7rjB4Rh2XzD
+         aAjPTkRtg6K0goFaCdXR4WnEuHkiSnhkaH2J5p3J88PV+NKz3c7N9IsCIGrnoQzRh1Ji
+         BCaQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:reply-to:in-reply-to:references
+         :mime-version:dkim-signature;
+        bh=QAjLBoXDluL1Us5icr5dGKfmwWkp3xjeIAIheidt1Uc=;
+        b=cUraiCP1BUQDfckbh1O9fOjnTdN6t3awJurtGxvWtejyXCQNxDAFg0CHmhtG6xZ4G3
+         48AY+RZmQe7FcMZ3dp/I5KFNWFWYYE5zdi8973dkP+XLPCcrOci8GlNVcLLpZHxRw0L5
+         7h26Lbr2gLzZtm3zU5nbzp+JcYu3ZUDvAiqs49mlNoeSBAtmDpyZgc30UQRe4l3XMQWU
+         xdjk6vlgCahl1jHV591O5iuDx7lMJaVWaOaDPipTcRiai1ho5554b7yq/jrBtVl18BWf
+         NYUTNWX/L9dtmCtOwpz8QLGyQ2EpJ3hpc49pedGboZgHzXc0pDp6QC8bT1T6d/mqJazu
+         t4jQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=eajwhiHR;
+       spf=pass (google.com: domain of matthewsbakker182@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=matthewsbakker182@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <matthewsbakker182@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id z9-20020a05620a08c900b006ff9543d4fesor41661qkz.154.2022.12.22.03.18.06
+        for <curls1@gmail.com>
+        (Google Transport Security);
+        Thu, 22 Dec 2022 03:18:06 -0800 (PST)
+Received-SPF: pass (google.com: domain of matthewsbakker182@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=eajwhiHR;
+       spf=pass (google.com: domain of matthewsbakker182@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=matthewsbakker182@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:reply-to:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=QAjLBoXDluL1Us5icr5dGKfmwWkp3xjeIAIheidt1Uc=;
+        b=eajwhiHRTCbF4+DuU1j0DxPPkZ7taP8iy9TQXPCvH/Ox88DoSa1zAo9hQFZVjMmG2W
+         NeqEKUx5lIlDMESCR0UrSNeuSZf8walypybg0O+Sgjmv+tbvOSs9X9pKruikNCamisPr
+         ZbFCDXUCBWrt6dTDQmdQcyeYUXa3Q2Bnbsv382efVuRTeEotP+w3/vuez2af3aRRN6ya
+         hunrJFonoWR56O7Jt6GpHTbFk6PJPBUJXtp6T4Rz7Hca0OHHD2bvevyp/ZMYbfscNupM
+         An2dVW/BnEsN4MVFz2jye6u9y9dTpQhC8qztCIF1mBhGIcPUSOrQZWBewrBOYgEBC4Vl
+         67NQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:reply-to:in-reply-to:references
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=QAjLBoXDluL1Us5icr5dGKfmwWkp3xjeIAIheidt1Uc=;
+        b=BUEdflRMKTaqvFTzrZsf3Hxp9nX6GKR3PYMw+Zu6PtQa572IbQLBlTD71szmA9HW3B
+         PRA2tYOruieSKICi+ScIDejWIkYKIzMM4/1xTcgCl+naCs4kft6HwePszXT/Q75yfgrd
+         fma2ZSxJnJA1dtyKuFs5ut8DXRN/pFKmjCFMNr6VtNE1fvgBlNrDKaeYfteePKaJCZAh
+         w014x1mcbH7L+HMTDWimDFXFXnnbpMoWxcoRtpQxy9ibnDbOKp1r/LGcFKPzvQ7/vI2D
+         64iYFXbbScvz/KHHORE0c8XxO5rP7BCxxenfjgypldMPNsIL/jqusDNglJlJ+q/VqrYH
+         zfeA==
+X-Gm-Message-State: AFqh2kouOvTrtR0Ut7kdrvDwzFPjZvHck0Wbx3Z/VvnHXktHHTSTK7FP
+	LDUQimTmcCvmNzEUEgYEco3a14S40gzNUWJH2s0=
+X-Google-Smtp-Source: AMrXdXvIKaimxnyIsvmMhFZwBTvDaCqwqfqwBJHmAoF7L73k4neLr9F0c1lmdC6IKUQOAHRsg28QU0iCEgPEqNmP1QM=
+X-Received: by 2002:a05:620a:204c:b0:6fe:daa6:f999 with SMTP id
+ d12-20020a05620a204c00b006fedaa6f999mr192051qka.744.1671707885673; Thu, 22
+ Dec 2022 03:18:05 -0800 (PST)
+MIME-Version: 1.0
+References: <CAG-+ATCpuPcq9Q8W4peR9h-g5TsFyVTdxMGjh+kcj5rgvhj+FA@mail.gmail.com>
+In-Reply-To: <CAG-+ATCpuPcq9Q8W4peR9h-g5TsFyVTdxMGjh+kcj5rgvhj+FA@mail.gmail.com>
+Reply-To: uddudd651@gmail.com
+From: RE <jppp75819@gmail.com>
+Date: Thu, 22 Dec 2022 13:17:50 +0200
+Message-ID: <CAG-+ATDObrGug+iiW8Yw29VSm50+f2a2e60zpgqQ=By6RQoyNQ@mail.gmail.com>
+Subject: REF
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="000000000000b1a5eb05f068d2e0"
+Bcc: curls1@gmail.com
+
+--000000000000b1a5eb05f068d2e0
+Content-Type: text/plain; charset="UTF-8"
+
+*From: Federal Bureau of Investigation*
+
+*1735 Johnston Road*
+
+*Cape Town, 2535*
+
+*South African.*
+
+
+
+*Attention; Sir/Madam,*
+
+
+
+*This message is directed to inform you that we have been working towards
+the eradication of fraudsters and Scam Artists in the World with the help
+of the African Union (AU), the International Monetary Fund (IMF) and FBI.
+We have been able to track down so many of these scam artists in various
+parts of African, Europe, Asia, South America and Middle East countries and
+those apprehended are currently in our custody .*
+
+
+
+*The International Monetary Fund (IMF) has approved R500, 000.00 (Five
+Hundred Thousand Rand). As compensation to any company or individual
+affected with this scammers, if you have been involved in any fund related
+issue under contract, lottery awarded payment or other monetary issues
+which your payment have not been made to you from 2002 to 2022, urgently
+furnish us the following: Please contact our processing agent for immediate
+release of your payment:*
+
+
+
+*Kindly contact our processing agent for immediate release of your payment.*
+
+*Person to Contact: Mr. Kelvin Collins*
+
+*Hotline: +27 65 691 2000*
+
+*Kindly reply to this agent email immediately after your
+payment: office201@gmail.co.za
+<https://mail.google.com/mail/u/0/h/1824fiq04jhus/?&cs=wh&v=b&to=office201@gmail.co.za>*
+
+
+
+*Please forward to them the following details below;*
+
+*1. Full Name:*
+
+*2. Your Alternative Email:*
+
+*3. Country of Origin:*
+
+*4. Gender:*
+
+*5. Amount Scammed:*
+
+*6. Occupation:*
+
+*7. Your Whatsapp Number:*
+
+*8. Contact Telephone Numbers:*
+
+
+
+*We wait for your urgent response before the end of today.*
+
+
+
+*Yours in Service.*
+
+*MR. WILSON STEWART.*
+
+*FBI Funds Investigation Unit*
+
+--000000000000b1a5eb05f068d2e0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_quote"><br><div dir=3D"ltr"><p class=
+=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;line-heigh=
+t:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span s=
+tyle=3D"font-size:10pt;font-family:Arial,&quot;sans-serif&quot;"><b>From: F=
+ederal Bureau of Investigation</b></span></p><p class=3D"MsoNormal" style=
+=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:normal;font-size:1=
+1pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size:10=
+pt;font-family:Arial,&quot;sans-serif&quot;"><b>1735 Johnston Road</b></spa=
+n></p><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin:0in 0in 0.000=
+1pt;line-height:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&=
+quot;"><span style=3D"font-size:10pt;font-family:Arial,&quot;sans-serif&quo=
+t;"><b>Cape Town, 2535</b></span></p><p class=3D"MsoNormal" style=3D"color:=
+rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:normal;font-size:11pt;font-f=
+amily:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size:10pt;font-fa=
+mily:Arial,&quot;sans-serif&quot;"><b>South African.</b></span></p><p class=
+=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;line-heigh=
+t:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span s=
+tyle=3D"font-size:7pt;font-family:Arial,&quot;sans-serif&quot;"><b>=C2=A0</=
+b></span></p><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin:0in 0i=
+n 0.0001pt;line-height:normal;font-size:11pt;font-family:Calibri,&quot;sans=
+-serif&quot;"><span style=3D"font-size:10pt;font-family:Arial,&quot;sans-se=
+rif&quot;"><b>Attention; Sir/Madam,</b></span></p><p class=3D"MsoNormal" st=
+yle=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:normal;font-siz=
+e:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size=
+:7pt;font-family:Arial,&quot;sans-serif&quot;"><b>=C2=A0</b></span></p><p c=
+lass=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;line-h=
+eight:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><sp=
+an style=3D"font-size:10pt;font-family:Arial,&quot;sans-serif&quot;"><b>Thi=
+s message is directed to inform you that we have been working towards the e=
+radication of fraudsters and Scam Artists in the World with the help of the=
+ African Union (AU), the International Monetary Fund (IMF) and FBI. We have=
+ been able to track down so many of these scam artists in various parts of =
+African, Europe, Asia, South America and Middle East countries and those ap=
+prehended are currently in our custody .</b></span></p><p class=3D"MsoNorma=
+l" style=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:normal;fon=
+t-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font=
+-size:7pt;font-family:Arial,&quot;sans-serif&quot;"><b>=C2=A0</b></span></p=
+><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;l=
+ine-height:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;=
+"><span style=3D"font-size:10pt;font-family:Arial,&quot;sans-serif&quot;"><=
+b>The International Monetary Fund (IMF) has approved R500, 000.00 (Five Hun=
+dred Thousand Rand). As compensation to any company or individual affected =
+with this scammers, if you have been involved in any fund related issue und=
+er contract, lottery awarded payment or other monetary issues which your pa=
+yment have not been made to you from 2002 to 2022, urgently furnish us the =
+following: Please contact our processing agent for immediate release of you=
+r payment:</b></span></p><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0);m=
+argin:0in 0in 0.0001pt;line-height:normal;font-size:11pt;font-family:Calibr=
+i,&quot;sans-serif&quot;"><span style=3D"font-size:7pt;font-family:Arial,&q=
+uot;sans-serif&quot;"><b>=C2=A0</b></span></p><p class=3D"MsoNormal" style=
+=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:normal;font-size:1=
+1pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size:10=
+pt;font-family:Arial,&quot;sans-serif&quot;"><b>Kindly contact our processi=
+ng agent for immediate release of your payment.</b></span></p><p class=3D"M=
+soNormal" style=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:nor=
+mal;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=
+=3D"font-size:10pt;font-family:Arial,&quot;sans-serif&quot;"><b>Person to C=
+ontact: Mr. Kelvin Collins</b></span></p><p class=3D"MsoNormal" style=3D"co=
+lor:rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:normal;font-size:11pt;fo=
+nt-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size:10pt;fon=
+t-family:Arial,&quot;sans-serif&quot;"><b>Hotline: +27 65 691 2000</b></spa=
+n></p><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin:0in 0in 0.000=
+1pt;line-height:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&=
+quot;"><span style=3D"font-size:10pt;font-family:Arial,&quot;sans-serif&quo=
+t;"><b>Kindly reply to this agent email immediately after your payment:=C2=
+=A0<a href=3D"https://mail.google.com/mail/u/0/h/1824fiq04jhus/?&amp;cs=3Dw=
+h&amp;v=3Db&amp;to=3Doffice201@gmail.co.za" rel=3D"noreferrer noreferrer" s=
+tyle=3D"color:rgb(0,0,204)" target=3D"_blank">office201@gmail.co.za</a></b>=
+</span></p><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin:0in 0in =
+0.0001pt;line-height:normal;font-size:11pt;font-family:Calibri,&quot;sans-s=
+erif&quot;"><span style=3D"font-size:7pt;font-family:Arial,&quot;sans-serif=
+&quot;"><b>=C2=A0</b></span></p><p class=3D"MsoNormal" style=3D"color:rgb(0=
+,0,0);margin:0in 0in 0.0001pt;line-height:normal;font-size:11pt;font-family=
+:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size:10pt;font-family:=
+Arial,&quot;sans-serif&quot;"><b>Please forward to them the following detai=
+ls below;</b></span></p><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0);ma=
+rgin:0in 0in 0.0001pt;line-height:normal;font-size:11pt;font-family:Calibri=
+,&quot;sans-serif&quot;"><span style=3D"font-size:10pt;font-family:Arial,&q=
+uot;sans-serif&quot;"><b>1. Full Name:</b></span></p><p class=3D"MsoNormal"=
+ style=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:normal;font-=
+size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-s=
+ize:10pt;font-family:Arial,&quot;sans-serif&quot;"><b>2. Your Alternative E=
+mail:</b></span></p><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin=
+:0in 0in 0.0001pt;line-height:normal;font-size:11pt;font-family:Calibri,&qu=
+ot;sans-serif&quot;"><span style=3D"font-size:10pt;font-family:Arial,&quot;=
+sans-serif&quot;"><b>3. Country of Origin:</b></span></p><p class=3D"MsoNor=
+mal" style=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:normal;f=
+ont-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"fo=
+nt-size:10pt;font-family:Arial,&quot;sans-serif&quot;"><b>4. Gender:</b></s=
+pan></p><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin:0in 0in 0.0=
+001pt;line-height:normal;font-size:11pt;font-family:Calibri,&quot;sans-seri=
+f&quot;"><span style=3D"font-size:10pt;font-family:Arial,&quot;sans-serif&q=
+uot;"><b>5. Amount Scammed:</b></span></p><p class=3D"MsoNormal" style=3D"c=
+olor:rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:normal;font-size:11pt;f=
+ont-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size:10pt;fo=
+nt-family:Arial,&quot;sans-serif&quot;"><b>6. Occupation:</b></span></p><p =
+class=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;line-=
+height:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><s=
+pan style=3D"font-size:10pt;font-family:Arial,&quot;sans-serif&quot;"><b>7.=
+ Your Whatsapp Number:</b></span></p><p class=3D"MsoNormal" style=3D"color:=
+rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:normal;font-size:11pt;font-f=
+amily:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size:10pt;font-fa=
+mily:Arial,&quot;sans-serif&quot;"><b>8. Contact Telephone Numbers:</b></sp=
+an></p><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin:0in 0in 0.00=
+01pt;line-height:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif=
+&quot;"><span style=3D"font-size:7pt;font-family:Arial,&quot;sans-serif&quo=
+t;"><b>=C2=A0</b></span></p><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0=
+);margin:0in 0in 0.0001pt;line-height:normal;font-size:11pt;font-family:Cal=
+ibri,&quot;sans-serif&quot;"><span style=3D"font-size:10pt;font-family:Aria=
+l,&quot;sans-serif&quot;"><b>We wait for your urgent response before the en=
+d of today.</b></span></p><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0);=
+margin:0in 0in 0.0001pt;line-height:normal;font-size:11pt;font-family:Calib=
+ri,&quot;sans-serif&quot;"><span style=3D"font-size:7pt;font-family:Arial,&=
+quot;sans-serif&quot;"><b>=C2=A0</b></span></p><p class=3D"MsoNormal" style=
+=3D"color:rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:normal;font-size:1=
+1pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size:10=
+pt;font-family:Arial,&quot;sans-serif&quot;"><b>Yours in Service.</b></span=
+></p><p class=3D"MsoNormal" style=3D"color:rgb(0,0,0);margin:0in 0in 0.0001=
+pt;line-height:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&q=
+uot;"><span style=3D"font-size:10pt;font-family:Arial,&quot;sans-serif&quot=
+;"><b>MR. WILSON STEWART.</b></span></p><p class=3D"MsoNormal" style=3D"col=
+or:rgb(0,0,0);margin:0in 0in 0.0001pt;line-height:normal;font-size:11pt;fon=
+t-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size:10pt;font=
+-family:Arial,&quot;sans-serif&quot;"><b>FBI Funds Investigation Unit</b></=
+span></p></div>
+</div></div>
+
+--000000000000b1a5eb05f068d2e0--

@@ -1,0 +1,200 @@
+Delivered-To: curls1@gmail.com
+Received: by 2002:a17:906:89a6:b0:72b:22bd:72f5 with SMTP id gg38csp2381294ejc;
+        Tue, 26 Jul 2022 07:26:08 -0700 (PDT)
+X-Received: by 2002:ab0:3f0c:0:b0:383:f357:9c02 with SMTP id bt12-20020ab03f0c000000b00383f3579c02mr5353230uab.19.1658845568158;
+        Tue, 26 Jul 2022 07:26:08 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1658845568; cv=none;
+        d=google.com; s=arc-20160816;
+        b=anG4wFYQ+9JdE6FCZI6nBED5b8Tj+wlWCvc5r9EFDvf1Q6DuJZwko4JqVEQqsMDHyL
+         rKikQOO6QrxDKQarSMXckZx9QR+9NTKRvFa3KWcfBbtrWsK4izaRUsKsyxJuJFmPtdOq
+         d2BpUp3nqYCX2uwrhp5E7FlOHzENeAEYfOK9JiPU7nLZvg2iHZUlY6IFEpsHby+2+z72
+         DUbQFLYraieBO91fHnzYzyuOct5gFS0obADNC3fH9zu8COqNmCjPySoZul7PPWv6292U
+         Qh+IptvRXkI0d8Y/LZQlyYAiU/dTKL4+jKvxxzY1UDt5lAxh/IrnTxcIXeEL41WO3fSz
+         KZ1g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=/exC7XdkzWevcibj12O/whb3insunF5iJPVlza0aJLA=;
+        b=RjSOtrUBccDro/aUUtODGrlK5ITru5TRtxuKAIIiGsHKybQzsiW0KKogC/nHBU4Qar
+         xYtr7LdS58XVbDGAs2332ADgKM7DJq1zCEic31Xp8Y3tfji3VU44wpuUoC55dHpdqLtV
+         QdSOXgQKZU7ldlBEjcTfRsjJKpZF2z/wvxpXcCzDTcw8i8TsDp+etaWKo79/N1XpUWbN
+         LPk+DxmCMpkNBz3GuQTow9SI5awRtuUj++FjDnbEK5NY+0YlQ5InYsDGG4q1g8EBMywY
+         NQHxzioaQ9FuW8+P8raxpE4v3jEWQsyPJNSvemByP6xPKzvaVBjuSGKxDa21A6QDdhuK
+         u1NQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=D+48um5M;
+       spf=pass (google.com: domain of holtzasilery678@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=holtzasilery678@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <holtzasilery678@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id n21-20020a0561023ed500b0035755f91208sor4204587vsv.118.2022.07.26.07.26.07
+        for <curls1@gmail.com>
+        (Google Transport Security);
+        Tue, 26 Jul 2022 07:26:08 -0700 (PDT)
+Received-SPF: pass (google.com: domain of holtzasilery678@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=D+48um5M;
+       spf=pass (google.com: domain of holtzasilery678@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=holtzasilery678@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=/exC7XdkzWevcibj12O/whb3insunF5iJPVlza0aJLA=;
+        b=D+48um5M68nTK5xfrwOpSSxaI6955BTnFap5QJ9ATh2HQE2jrB977h8BrYTjaaBETQ
+         KW58+ITL8krDWLToBmm1pyMpxBGVX+MZ/q/z7RCg9Sp1PhnRzT5X/UVk2DRppTHh1TPA
+         l+P05+LvhBdLuEcMELjD2lKxO5uOm4s1b2odRXJcVIq4YmG1j1Qo6s1YBVMqLi8fj7C+
+         ymPD57F5fXz/E0illqrbIrUjt/LcdQmWWAelQ72tLmIj+Jn9XthS2q3SHZ2ABwQDlyt9
+         PVmm5I/xk12BrwPNIbgIp+9jtggiCqQCCRlb+qoVGk/NCqL6VtqdGr03LD+fRObBc/Ej
+         8jIQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=/exC7XdkzWevcibj12O/whb3insunF5iJPVlza0aJLA=;
+        b=nTWO4ux1/692pBSHKGiXGm/OaGwKa6yRfdq3y8PCWlBh7B+3CILs9jQ21mi5DA80zC
+         3osMxPa7KEjMbQ/9utc+TgW+ppQaZ4dAsZpC7KCpscqzrvyAXfn9ibLgp7N7nklPgi9N
+         aIVp9sV9m3sezEcx0vPhzDDm2h4HQc3rnZ443YhJHCR4+NFLx/T+qmqbzWCWKrXZvzU/
+         pwJbuNTR/4PWXd+GwVdHKFBq/5wgUCmBkEYedsqYGeWLidMU2r6t2ozJJIz6hv2GX9Mj
+         mmulMeFvOAS4tKwOrix9OhrxRFd6AdQBX+YRgV6Shm2Xjx/2O9LvXLafn6mvyDJuYaX+
+         YN8Q==
+X-Gm-Message-State: AJIora+jfPP3WZP1N6vgizdyDN6u6JIHoBXpCm0Q7ubGhKYyE8pxYrDx
+	ETN5lsudq16KLj6x6jmZNpSW+L0u3NQSL8rBSq0=
+X-Google-Smtp-Source: AGRyM1tHq+/cmnHDJo+6IruLOyk6A3xV+b+9Nw+Os2scTKoQNBz9AeaFYTssIKViFNUValHYDrq1Gw/JTRmZeK+X6u8=
+X-Received: by 2002:a05:6102:81b:b0:358:51f1:790c with SMTP id
+ g27-20020a056102081b00b0035851f1790cmr3972649vsb.2.1658845567376; Tue, 26 Jul
+ 2022 07:26:07 -0700 (PDT)
+MIME-Version: 1.0
+From: Holtza Siler <holtzasilery678@gmail.com>
+Date: Tue, 26 Jul 2022 07:25:56 -0700
+Message-ID: <CANKkpXO+khTo6Thz1qetnL7gWGjukAvrc1sHiTwK19Zg7WkY4Q@mail.gmail.com>
+Subject: BILL No. HOW2022072 6JA
+To: nortoncc1.2022@outlook.com
+Content-Type: multipart/alternative; boundary="000000000000c7e38f05e4b614d6"
+Bcc: curls1@gmail.com
+
+--000000000000c7e38f05e4b614d6
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Thank you for your order, Here is your details
+
+
+INVOICE IDProduct Details
+
+HOW20220726JA NORTON TOTAL PROTECTION
+
+
+*Order Summary*
+
+*INVOICE NO.:* HOW20220726JA
+*START DATE:* *26 Jul 2022*
+*FINISH DATE:* *1 year from ISSUE DATE*
+*Payment Mode:* Auto debit from account
+*Status:* Completed
+
+
+*Item Name* *Quantity* *Grand Total*
+NORTON TOTAL PROTECTION (HOW20220726JA) 1 $440.00 USD
+Sub-total $440.00 USD
+Discount 00.00
+Total $440.00 USD=3D=3D=3D
+
+
+
+
+
+
+
+If you wish to not to continue subscription and ask for a *REFUND* then
+please feel free to call our Billing Dept. as soon as possible.
+You can Reach us on : * +1   =E2=80=93 ( 888 ) =E2=80=93 ( 996 ) =E2=80=93 =
+0715*
+
+Kind Regards,
+Refund & Settlement Dept.
+
+--000000000000c7e38f05e4b614d6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div style=3D"color:rgb(0,0,0);font-family:Roboto,RobotoDr=
+aft,Helvetica,Arial,sans-serif;font-size:13px"><br class=3D"gmail-Apple-int=
+erchange-newline">Thank you for your order, Here is your details</div><br s=
+tyle=3D"color:rgb(0,0,0);font-family:Roboto,RobotoDraft,Helvetica,Arial,san=
+s-serif;font-size:13px"><br style=3D"color:rgb(0,0,0);font-family:Roboto,Ro=
+botoDraft,Helvetica,Arial,sans-serif;font-size:13px"><table cellpadding=3D"=
+0" cellspacing=3D"0" align=3D"left" width=3D"588px" style=3D"font-size:13px=
+;font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif"><tbody><tr><th =
+align=3D"left">INVOICE ID</th><th align=3D"left">Product Details</th></tr><=
+tr><td>=C2=A0</td><td>=C2=A0</td></tr><tr><td>HOW20220726JA</td><td>NORTON =
+TOTAL PROTECTION</td></tr></tbody></table><div style=3D"color:rgb(0,0,0);fo=
+nt-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;font-size:13px;clea=
+r:both"></div><br style=3D"color:rgb(0,0,0);font-family:Roboto,RobotoDraft,=
+Helvetica,Arial,sans-serif;font-size:13px"><br style=3D"color:rgb(0,0,0);fo=
+nt-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;font-size:13px"><di=
+v style=3D"color:rgb(0,0,0);font-family:Roboto,RobotoDraft,Helvetica,Arial,=
+sans-serif;font-size:13px"><strong>Order Summary</strong></div><br style=3D=
+"color:rgb(0,0,0);font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif=
+;font-size:13px"><div style=3D"color:rgb(0,0,0);font-family:Roboto,RobotoDr=
+aft,Helvetica,Arial,sans-serif;font-size:13px"><table cellpadding=3D"0" cel=
+lspacing=3D"0" align=3D"left" width=3D"588px"><tbody><tr><td width=3D"30%">=
+<strong>INVOICE NO.:</strong></td><td width=3D"30%">HOW20220726JA</td><td w=
+idth=3D"30%"></td><td width=3D"10%"></td></tr><tr><td width=3D"30%"><strong=
+>START DATE:</strong></td><td width=3D"30%"><b>26 Jul 2022</b></td><td widt=
+h=3D"30%">=C2=A0</td><td width=3D"10%">=C2=A0</td></tr><tr><td width=3D"30%=
+"><strong>FINISH DATE:</strong></td><td width=3D"30%"><b>1 year from ISSUE =
+DATE</b></td><td width=3D"30%">=C2=A0</td><td width=3D"10%">=C2=A0</td></tr=
+><tr><td width=3D"30%"><strong>Payment Mode:</strong></td><td width=3D"30%"=
+>Auto debit from account</td><td width=3D"30%">=C2=A0</td><td width=3D"10%"=
+>=C2=A0</td></tr><tr><td width=3D"30%"><strong>Status:</strong></td><td wid=
+th=3D"30%">Completed</td><td width=3D"30%">=C2=A0</td><td width=3D"10%">=C2=
+=A0</td></tr></tbody></table></div><div style=3D"color:rgb(0,0,0);font-fami=
+ly:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;font-size:13px;clear:both"=
+></div><br style=3D"color:rgb(0,0,0);font-family:Roboto,RobotoDraft,Helveti=
+ca,Arial,sans-serif;font-size:13px"><br style=3D"color:rgb(0,0,0);font-fami=
+ly:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;font-size:13px"><table bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"5" style=3D"font-size:13px;font-=
+family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;width:588px"><tbody><t=
+r><td style=3D"border-bottom:1px solid rgb(0,0,0);background:rgb(204,204,20=
+4)"><b>Item Name</b></td><td style=3D"border-bottom:1px solid rgb(0,0,0);ba=
+ckground:rgb(204,204,204)"><b>Quantity</b></td><td align=3D"right" style=3D=
+"border-bottom:1px solid rgb(0,0,0);background:rgb(204,204,204)"><b>Grand T=
+otal</b></td></tr><tr><td>NORTON TOTAL PROTECTION (HOW20220726JA)</td><td>1=
+</td><td align=3D"right">$440.00 USD</td></tr><tr><td colspan=3D"2" align=
+=3D"right" style=3D"border-bottom:1px solid rgb(0,0,0);padding:10px 5px">Su=
+b-total</td><td align=3D"right" style=3D"padding:10px 5px;border-bottom:1px=
+ solid rgb(0,0,0)">$440.00 USD</td></tr><tr><td colspan=3D"2" align=3D"righ=
+t" style=3D"border-bottom:1px solid rgb(0,0,0);padding:10px 5px">Discount</=
+td><td align=3D"right" style=3D"padding:10px 5px;border-bottom:1px solid rg=
+b(0,0,0)">00.00</td></tr><tr><td colspan=3D"2" align=3D"right" style=3D"pad=
+ding:10px 5px">Total</td><td align=3D"right" style=3D"padding:10px 5px">$44=
+0.00 USD</td></tr></tbody></table>=3D=3D=3D<div><br></div><div><br></div><d=
+iv><br></div><div><br></div><div><br></div><div><br style=3D""><br style=3D=
+"color:rgb(0,0,0);font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif=
+;font-size:13px"><span style=3D"color:rgb(0,0,0);font-family:Roboto,RobotoD=
+raft,Helvetica,Arial,sans-serif;font-size:13px">If you wish to not to conti=
+nue subscription and ask for a=C2=A0</span><b style=3D"color:rgb(0,0,0);fon=
+t-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;font-size:13px">REFU=
+ND</b><span style=3D"color:rgb(0,0,0);font-family:Roboto,RobotoDraft,Helvet=
+ica,Arial,sans-serif;font-size:13px">=C2=A0then please feel free to call ou=
+r Billing Dept. as soon as possible.</span><br style=3D"color:rgb(0,0,0);fo=
+nt-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;font-size:13px"><di=
+v style=3D"color:rgb(0,0,0);font-family:Roboto,RobotoDraft,Helvetica,Arial,=
+sans-serif;font-size:13px">You can Reach us on=C2=A0:=C2=A0<font face=3D"ar=
+ial, sans-serif" size=3D"4"><b>=C2=A0+1=C2=A0 =C2=A0=E2=80=93=C2=A0(=C2=A08=
+88=C2=A0)=C2=A0=E2=80=93=C2=A0(=C2=A0996=C2=A0)=C2=A0=E2=80=93=C2=A00715</b=
+></font></div><br style=3D"color:rgb(0,0,0);font-family:Roboto,RobotoDraft,=
+Helvetica,Arial,sans-serif;font-size:13px"><div style=3D"color:rgb(0,0,0);f=
+ont-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;font-size:13px">Ki=
+nd Regards,</div><div style=3D"color:rgb(0,0,0);font-family:Roboto,RobotoDr=
+aft,Helvetica,Arial,sans-serif;font-size:13px">Refund &amp; Settlement Dept=
+.</div></div><div style=3D"color:rgb(0,0,0);font-family:Roboto,RobotoDraft,=
+Helvetica,Arial,sans-serif;font-size:13px"><br></div><div style=3D"color:rg=
+b(0,0,0);font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;font-siz=
+e:13px"><br></div><div style=3D"color:rgb(0,0,0);font-family:Roboto,RobotoD=
+raft,Helvetica,Arial,sans-serif;font-size:13px"><br></div><div style=3D"col=
+or:rgb(0,0,0);font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;fon=
+t-size:13px"><br></div><div style=3D"color:rgb(0,0,0);font-family:Roboto,Ro=
+botoDraft,Helvetica,Arial,sans-serif;font-size:13px"><br></div><div style=
+=3D"color:rgb(0,0,0);font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-se=
+rif;font-size:13px"><br></div></div>
+
+--000000000000c7e38f05e4b614d6--

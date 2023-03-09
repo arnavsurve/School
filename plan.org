@@ -1,0 +1,32 @@
+* Not satisfied
+** TODO UCC:Humanities
+** TODO Civics Literacy
+** TODO MAJOR SPECIFIC COURSES
+** TODO Behavioral/Social Sciences
+** TODO Humanities
+** TODO Accounting Selective
+** TODO Communications Selective
+** TODO Professional Speaking Selective
+** TODO Professional Writing Selective
+** TODO Statistics Selective
+** TODO Interdisciplinary Selective
+
+* Questions
+- will COM 3xx count for communications selective AND prof. speaking selective
+
+* Fall 2023
+** CNIT 25501
+** CNIT 27100
+** MGMT 20000 [[Accounting Selective]]
+** (?) JPNS 10100 [[UCC:Humanities]] [[Humanities]]
+** (?) [[Behavioral/Social Sciences]]
+
+* Summer 2024
+** (?) JPNS 10200 [[UCC:Humanities]] [[Humanities]]
+** (?) [[Behavioral/Social Sciences]]
+
+* Spring 2024
+** CNIT 24200
+** CNIT 27200
+** STAT 225/301/501/511 [[Statistics Selective]]
+** COM 21200 [[Communications Selective]]
