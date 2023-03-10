@@ -24,7 +24,7 @@ SCHEDULED: <2023-03-09 Thurs 09:30-11:30 +1w>
 *** TODO CNIT155 Lecture
 SCHEDULED: <2023-03-24 Fri 14:30-15:30 +1w>
 ** homework
-*** TODO CNIT 155 Assignment07
+*** DONE CNIT 155 Assignment07
 DEADLINE: <2023-03-14 Tue 23:59>
 ** notes
 
