@@ -1,0 +1,14 @@
+socket source ip & port #, destination ip & port#
+
+address
+- port
+- ip addr
+- mac addr
+- media access control
+
+osi layer assoc
+- transport layer (logical)
+- network layer (logical)
+- data link (physical)
+
+NIC network interface card
