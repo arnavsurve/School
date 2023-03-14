@@ -5,6 +5,8 @@
 """
 This Python program performs various computations using user defined functions. It
 displays a menu and asks the user to select one of options. The menu will be
+
+
 displayed at the beginning and then displayed whenever each option is done (except
 the Exit option). The program keeps running until the user choose the exit option.
 """
